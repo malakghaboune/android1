@@ -1,0 +1,51 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Title"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Description"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextTaskDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Due Date (yyyy-mm-dd)"
+            android:inputType="date"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonSaveTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Task"
+            android:background="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
